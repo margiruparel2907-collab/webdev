@@ -26,6 +26,21 @@ header{
     padding:0 20px;
 }
 
+.menu-circle1{
+    width:35px;
+    height:35px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    
+    cursor:pointer;
+}
 .menu-circle{
     width:35px;
     height:35px;
@@ -41,37 +56,32 @@ header{
     font-size:23px;
     cursor:pointer;
 }
-
 .greeting{
     margin-left:18px;
     font-size:19px;
     font-weight:normal;
 }
-.option{
-    display: flex;
-    align-items: center;
-    gap: 125px;         
-    margin-bottom: 1px;
+.menu{
+    background: #6390b3;
+    width: 420px;
+    height: 680px;
+    left:55px;
+    position:relative;
 }
-.a{
-	top:25px;
-	position: relative;
-    left:90px;
-	height:145px;
-    width:145px;
-  margin-bottom: 20px;
-	background-color: #5A95C6;
+.menu .text{
+ display: block;
+    text-decoration: none;
+    color: #222;
+    font-size: 20px;
+    padding: 12px 20px;
+    transition: 0.3s;
+    top:20px;
 }
-.option h4{
- 	position:relative;
-	
+.menu .text:hover{
+    background-color: #EAF5FC;
+    color: #4682B4;
+    border-radius: 8px;
 }
-.icon{
-    width:70px;
-    height:70px;
-    opacity:0.50;   /* Faded look */
-}
-
 
 
 
