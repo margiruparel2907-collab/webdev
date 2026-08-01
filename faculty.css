@@ -58,7 +58,7 @@ header{
     width: 1475px;
 }
 .sub{
-    margin-left:90px;
+    margin-left:55px;
     margin-top:40px;
 
     display:flex;
@@ -67,18 +67,14 @@ header{
 }
 
 .box{
-    width:280px;
-    height:80px;
+    width:1450px;
+    height:30px;
 
     background:#5A95C6;
 
-    border-radius:10px;
 
     display:flex;
     align-items:center;
-
-    padding-left:20px;
-
     font-size:20px;
     color:black;
 }
