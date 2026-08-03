@@ -57,3 +57,31 @@ header{
     top:60px;
     width: 1475px;
 }
+.attendance{
+    margin-top:90px;
+    margin-left:90px;
+}
+
+table{
+    width:90%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#6390b3;
+    color:white;
+    padding:12px;
+    border:1px solid #4d7ea4;
+    text-align:center;
+}
+
+td{
+    padding:12px;
+    border:1px solid #b8b8b8;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#eef5fb;
+}

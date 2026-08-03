@@ -57,3 +57,37 @@ header{
     top:60px;
     width: 1475px;
 }
+.table-container{
+    margin-top:100px;
+    margin-left:90px;
+    width:92%;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#6390b3;
+    color:white;
+    padding:14px;
+    border:1px solid #4d7ea4;
+    text-align:center;
+}
+
+td{
+    padding:14px;
+    border:1px solid #b8b8b8;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f4f8fb;
+}
+
+.break{
+    background:#dbe8f4;
+    font-weight:bold;
+}

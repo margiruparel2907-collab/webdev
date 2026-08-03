@@ -12,7 +12,7 @@ body{
 
 .line{
     width: 12px;
-    height: 680px;
+    height: 780px;
     z-index: 2;
   background-color: #6390b3;
 }
@@ -56,4 +56,47 @@ header{
     font-size:20px;
     top:60px;
     width: 1475px;
+}
+.leave-container{
+    margin-top:90px;
+    margin-left:90px;
+    width:90%;
+}
+
+.add-leave{
+    width:180px;
+    height:45px;
+
+    background:#6390b3;
+    color:white;
+
+    border:none;
+    border-radius:8px;
+
+    font-size:17px;
+    cursor:pointer;
+
+    margin-bottom:30px;
+}
+
+.add-leave:hover{
+    background:#4d7ea4;
+}
+
+.leave-box{
+    width:100%;
+    background:white;
+
+    border-left:8px solid #6390b3;
+    border-radius:10px;
+
+    padding:20px;
+    margin-bottom:25px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
+.leave-box p{
+    margin:8px 0;
+    font-size:17px;
 }

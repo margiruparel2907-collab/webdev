@@ -57,3 +57,48 @@ header{
     top:60px;
     width: 1475px;
 }
+.profile-container{
+    margin-top:100px;
+    margin-left:100px;
+
+    display:flex;
+    gap:60px;
+    align-items:flex-start;
+}
+
+.profile-photo img{
+    width:200px;
+    height:200px;
+
+    border-radius:50%;
+    border:5px solid #6390b3;
+
+    object-fit:cover;
+    background:white;
+}
+
+.profile-info{
+    width:650px;
+    background:white;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+.row{
+    display:flex;
+    margin:18px 0;
+}
+
+.label{
+    width:180px;
+    font-weight:bold;
+    color:#2d4d66;
+}
+
+.value{
+    color:#333;
+}

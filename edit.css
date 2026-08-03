@@ -12,7 +12,7 @@ body{
 
 .line{
     width: 12px;
-    height: 680px;
+    height: 800px;
     z-index: 2;
   background-color: #6390b3;
 }
@@ -56,4 +56,109 @@ header{
     font-size:20px;
     top:60px;
     width: 1475px;
+}
+.profile-container{
+    margin-top:90px;
+    margin-left:100px;
+
+    display:flex;
+    gap:70px;
+}
+
+.photo-section{
+    width:250px;
+    text-align:center;
+}
+
+.profile-pic{
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+    border:4px solid #6390b3;
+
+    object-fit:cover;
+    background:white;
+}
+
+.photo-btn{
+    margin-top:20px;
+    width:170px;
+    height:40px;
+
+    background:#6390b3;
+    color:white;
+
+    border:none;
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+.form-section{
+    width:500px;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.form-section label{
+    margin-top:15px;
+    margin-bottom:5px;
+
+    font-size:18px;
+}
+
+.form-section input,
+.form-section textarea{
+
+    padding:10px;
+
+    border:2px solid #6390b3;
+    border-radius:8px;
+
+    font-size:16px;
+
+    background:white;
+}
+
+.buttons{
+    margin-top:30px;
+
+    display:flex;
+    gap:20px;
+}
+
+.save-btn{
+    width:180px;
+    height:45px;
+
+    background:#6390b3;
+    color:white;
+
+    border:none;
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+.cancel-btn{
+    width:150px;
+    height:45px;
+
+    background:#d9534f;
+    color:white;
+
+    border:none;
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+.save-btn:hover{
+    background:#4d7ea4;
+}
+
+.cancel-btn:hover{
+    background:#c0392b;
 }
