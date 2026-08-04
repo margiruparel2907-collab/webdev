@@ -5,19 +5,19 @@
   fee details, certificates, and profile management.
 
 ## Features:
-  Login
-  Dashboard
-  Menu
-  Profile
-  Attendance
-  Time-Table
-  Fees-Information
-  Faculty-Feedback
-  Subject-Information
-  Certificates
-  Leave-Information
-  Edit-Profile
-  About-Us
+  Login,
+  Dashboard,
+  Menu,
+  Profile,
+  Attendance,
+  Time-Table,
+  Fees-Information,
+  Faculty-Feedback,
+  Subject-Information,
+  Certificates,
+  Leave-Information,
+  Edit-Profile,
+  About-Us..
 
 ## Site-Map
  Home/ Login
