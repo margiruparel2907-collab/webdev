@@ -1,10 +1,10 @@
-##Student-Hub: Student Portal
+## Student-Hub: Student Portal
 
-##Project Description:
+## Project Description:
   StudentHub provides students with a centralized platform to access academic information such as attendance, timetable,
   fee details, certificates, and profile management.
 
-##Features:
+## Features:
   Login
   Dashboard
   Menu
@@ -19,7 +19,7 @@
   Edit-Profile
   About-Us
 
-##Site-Map
+## Site-Map
  Home/ Login
      |
   |Dashboard
@@ -37,7 +37,7 @@
          -Edit-profile
          -Leave-information
 
-##Auther
+## Auther
 Name: Margi Ruparel
 
 ID: 25DCE101
