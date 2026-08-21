@@ -1,95 +1,177 @@
 body{
-	background:#f9ebbf;
-}
-.left-lines{
-    position: absolute;
-    top: 58px;
-    left: 8px;
+    margin:0;
+    background:#f3f5f7;
+    font-family:Arial, sans-serif;
+    color:#172b4d;
 
-    display: flex;
-    gap: 10px;
+    background-image:
+        linear-gradient(rgba(243,245,247,0.88),
+                        rgba(243,245,247,0.88)),
+        url("Screenshot 2026-08-18 160845.png");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+
+/* LEFT DECORATIVE LINES */
+
+.left-lines{
+    position:absolute;
+    top:58px;
+    left:8px;
+
+    display:flex;
+    gap:8px;
+
+    z-index:1;
 }
 
 .line{
-    width: 12px;
-    height: 680px;
+    width:8px;
+    height:760px;
 
-  background-color: #6390b3;
+    background:#2f5d85;
 }
+
+
+/* HEADER */
+
 header{
-    height:50px;
-    background:#6390b3;
+    height:60px;
+
+    background:#102a43;
 
     display:flex;
     align-items:center;
 
     padding:0 20px;
+
+    box-sizing:border-box;
+
+    color:white;
 }
+
+
+/* BACK BUTTON */
 
 .menu-circle1{
-    width:35px;
-    height:35px;
+    width:40px;
+    height:40px;
 
     border-radius:50%;
 
     background:white;
 
+    border:none;
+
     display:flex;
     justify-content:center;
     align-items:center;
 
-    
+    font-size:22px;
+
+    color:#102a43;
+
     cursor:pointer;
 }
+
+.menu-circle1:hover{
+    background:#e8eef3;
+}
+
+
+/* HAMBURGER BUTTON */
+
 .menu-circle{
-    width:35px;
-    height:35px;
+    width:40px;
+    height:40px;
 
     border-radius:50%;
 
     background:white;
 
+    border:none;
+
     display:flex;
     justify-content:center;
     align-items:center;
 
-    font-size:23px;
+    font-size:22px;
+
+    color:#102a43;
+
     cursor:pointer;
+
+    margin-left:15px;
 }
+
+.menu-circle:hover{
+    background:#e8eef3;
+}
+
+
+/* GREETING */
+
 .greeting{
     margin-left:18px;
+
     font-size:19px;
-    font-weight:normal;
+
+    font-weight:500;
 }
+
+
+/* MENU BOX */
+
 .menu{
-    background: #6390b3;
-    width: 420px;
-    height: 680px;
-    left:55px;
-    position:relative;
+    background:rgba(255,255,255,0.95);
+
+    width:420px;
+
+    min-height:680px;
+
+    margin-left:70px;
+    margin-top:0;
+
+    padding-top:25px;
+
+    box-sizing:border-box;
+
+    border-right:1px solid #dce3e8;
+
+    box-shadow:3px 0 12px rgba(16,42,67,0.08);
 }
+
+
+/* MENU LINKS */
+
 .menu .text{
- display: block;
-    text-decoration: none;
-    color: #222;
-    font-size: 20px;
-    padding: 12px 20px;
-    transition: 0.3s;
-    top:20px;
+    display:block;
+
+    text-decoration:none;
+
+    color:#102a43;
+
+    font-size:18px;
+
+    padding:15px 25px;
+
+    margin:3px 12px;
+
+    border-radius:6px;
+
+    transition:0.2s;
 }
+
+
+/* HOVER */
+
 .menu .text:hover{
-    background-color: #EAF5FC;
-    color: #4682B4;
-    border-radius: 8px;
+    background:#e8eef3;
+
+    color:#2f5d85;
+
+    padding-left:30px;
 }
-
-
-
-
-
-
-
-
-
-
-

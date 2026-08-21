@@ -1,87 +1,220 @@
 body{
-	background:#f9ebbf;
+    margin:0;
+
+    background:#f3f5f7;
+
+    font-family:Arial, sans-serif;
+
+    color:#172b4d;
+
+    background-image:
+        linear-gradient(rgba(243,245,247,0.90),
+                        rgba(243,245,247,0.90)),
+        url("Screenshot 2026-08-18 160845.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
 }
+
+
+/* LEFT DECORATIVE LINES */
+
 .left-lines{
-    position: absolute;
-    top: 58px;
-    left: 8px;
-    z-index: 1;
-    display: flex;
-    gap: 10px;
+    position:absolute;
+
+    top:58px;
+    left:8px;
+
+    display:flex;
+
+    gap:8px;
+
+    z-index:1;
 }
 
 .line{
-    width: 12px;
-    height: 680px;
-    z-index: 2;
-  background-color: #6390b3;
+    width:8px;
+
+    height:760px;
+
+    background:#2f5d85;
 }
+
+
+/* HEADER */
+
 header{
-    height:50px;
-    background:#6390b3;
+    height:60px;
+
+    background:#102a43;
 
     display:flex;
+
     align-items:center;
 
     padding:0 20px;
+
+    box-sizing:border-box;
+
+    color:white;
 }
 
+
+/* BACK BUTTON */
+
 .menu-circle1{
-    width:35px;
-    height:35px;
+    width:40px;
+    height:40px;
 
     border-radius:50%;
 
     background:white;
 
+    border:none;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
-    
+    font-size:22px;
+
+    color:#102a43;
+
     cursor:pointer;
 }
-.greeting{
-    margin-left:18px;
-    font-size:19px;
-    font-weight:normal;
-}
-.title{
-    height:30px;
-    background:#6390b3;
-    z-index: 1;
-    padding-left:20px;
-    line-height:30px;
-    position:absolute;
-    font-size:20px;
-    top:60px;
-    width: 1475px;
-}
-.attendance{
-    margin-top:90px;
-    margin-left:90px;
+
+.menu-circle1:hover{
+    background:#e8eef3;
 }
 
+
+/* GREETING */
+
+.greeting{
+    margin-left:18px;
+
+    font-size:19px;
+
+    font-weight:500;
+}
+
+
+/* PAGE TITLE */
+
+.title{
+    height:50px;
+
+    background:white;
+
+    padding-left:90px;
+
+    line-height:50px;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:#102a43;
+
+    border-bottom:1px solid #dce3e8;
+
+    box-sizing:border-box;
+}
+
+
+/* ATTENDANCE AREA */
+
+.attendance{
+    width:80%;
+
+    margin-left:90px;
+
+    margin-top:35px;
+
+    background:rgba(255,255,255,0.95);
+
+    padding:25px;
+
+    box-sizing:border-box;
+
+    border:1px solid #dce3e8;
+
+    box-shadow:0 4px 15px rgba(16,42,67,0.08);
+}
+
+
+/* TABLE */
+
 table{
-    width:90%;
+    width:100%;
+
     border-collapse:collapse;
+
     background:white;
 }
 
+
+/* TABLE HEADING */
+
 th{
-    background:#6390b3;
+    background:#102a43;
+
     color:white;
-    padding:12px;
-    border:1px solid #4d7ea4;
-    text-align:center;
+
+    padding:16px;
+
+    border:1px solid #102a43;
+
+    text-align:left;
+
+    font-size:16px;
 }
+
+
+/* TABLE DATA */
 
 td{
-    padding:12px;
-    border:1px solid #b8b8b8;
+    padding:16px;
+
+    border-bottom:1px solid #dce3e8;
+
+    text-align:left;
+
+    font-size:15px;
+
+    color:#526579;
+}
+
+
+/* ALTERNATE ROW */
+
+tr:nth-child(even){
+    background:#f5f8fa;
+}
+
+
+/* HOVER */
+
+tr:hover{
+    background:#eef3f7;
+}
+
+
+/* ATTENDANCE COLUMN */
+
+td:last-child{
+    font-weight:bold;
+
+    color:#2f5d85;
+
     text-align:center;
 }
 
-tr:nth-child(even){
-    background:#eef5fb;
+th:last-child{
+    text-align:center;
 }

@@ -1,154 +1,232 @@
 body{
-	background:#f9ebbf;
+    margin:0;
+
+    background:#f3f5f7;
+
+    font-family:Arial, sans-serif;
+
+    color:#172b4d;
+
+    background-image:
+        linear-gradient(rgba(243,245,247,0.90),
+                        rgba(243,245,247,0.90)),
+        url("Screenshot 2026-08-18 160845.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
 }
+
+
+/* LEFT DECORATIVE LINES */
+
 .left-lines{
-    position: absolute;
-    top: 58px;
-    left: 8px;
-    z-index: 1;
-    display: flex;
-    gap: 10px;
+    position:absolute;
+
+    top:58px;
+    left:8px;
+
+    display:flex;
+
+    gap:8px;
+
+    z-index:1;
 }
 
 .line{
-    width: 12px;
-    height: 680px;
-    z-index: 2;
-  background-color: #6390b3;
+    width:8px;
+
+    height:760px;
+
+    background:#2f5d85;
 }
+
+
+/* HEADER */
+
 header{
-    height:50px;
-    background:#6390b3;
+    height:60px;
+
+    background:#102a43;
 
     display:flex;
+
     align-items:center;
 
     padding:0 20px;
+
+    box-sizing:border-box;
+
+    color:white;
 }
 
+
+/* BACK BUTTON */
+
 .menu-circle1{
-    width:35px;
-    height:35px;
+    width:40px;
+    height:40px;
 
     border-radius:50%;
 
     background:white;
 
+    border:none;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
-    
+    font-size:22px;
+
+    color:#102a43;
+
     cursor:pointer;
 }
+
+.menu-circle1:hover{
+    background:#e8eef3;
+}
+
+
+/* GREETING */
+
 .greeting{
     margin-left:18px;
+
     font-size:19px;
-    font-weight:normal;
+
+    font-weight:500;
 }
+
+
+/* PAGE TITLE */
+
 .title{
-    height:30px;
-    background:#6390b3;
-    z-index: 1;
-    padding-left:20px;
-    line-height:30px;
-    position:absolute;
-    font-size:20px;
-    top:60px;
-    width: 1475px;
-}
-.certificate-container{
-    margin-left:95px;
-    margin-top:75px;
+    height:50px;
 
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-
-    gap:40px;
-    padding-right:40px;
-}
-
-.certificate-card{
-    width:320px;
     background:white;
 
-    border-radius:15px;
+    padding-left:90px;
 
-    overflow:hidden;
+    line-height:50px;
 
-    box-shadow:0 5px 12px rgba(0,0,0,.2);
+    font-size:22px;
 
-    transition:.3s;
+    font-weight:600;
+
+    color:#102a43;
+
+    border-bottom:1px solid #dce3e8;
+
+    box-sizing:border-box;
 }
 
-.certificate-card:hover{
-    transform:translateY(-8px);
-}
 
-.certificate-card img{
-    width:100%;
-    height:180px;
+/* CERTIFICATE CONTAINER */
 
-    object-fit:cover;
-}
-
-.certificate-card p{
-    text-align:center;
-
-    padding:12px;
-
-    font-size:20px;
-
-    font-weight:bold;
-}
 .certificate-container{
-    margin-top:80px;
     margin-left:90px;
 
+    margin-top:35px;
+
+    width:82%;
+
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:40px;
-    padding:20px;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:25px;
+
+    padding-bottom:30px;
 }
+
+
+/* CERTIFICATE CARD */
 
 .certificate-card{
-    width:300px;
-    background:white;
-    border-radius:15px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    background:rgba(255,255,255,0.95);
+
+    border:1px solid #dce3e8;
+
+    box-shadow:0 3px 10px rgba(16,42,67,0.08);
+
     overflow:hidden;
+
     text-align:center;
-    transition:0.3s;
+
+    transition:0.2s;
 }
 
+
+/* CARD HOVER */
+
 .certificate-card:hover{
-    transform:translateY(-6px);
+    border-color:#2f5d85;
+
+    box-shadow:0 6px 16px rgba(16,42,67,0.14);
+
+    transform:translateY(-4px);
 }
+
+
+/* CERTIFICATE IMAGE */
 
 .certificate-card img{
     width:100%;
+
     height:190px;
+
     object-fit:cover;
+
+    display:block;
+
+    border-bottom:1px solid #dce3e8;
 }
 
+
+/* CERTIFICATE NAME */
+
 .certificate-card h3{
-    margin:15px 0;
-    font-size:20px;
-    font-weight:normal;
+    margin:18px 10px 12px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#102a43;
 }
+
+
+/* VIEW BUTTON */
 
 .certificate-card button{
     margin-bottom:18px;
-    padding:10px 28px;
-    border:none;
-    border-radius:8px;
-    background:#6390b3;
+
+    padding:9px 25px;
+
+    background:#2f5d85;
+
     color:white;
-    font-size:16px;
+
+    border:none;
+
+    border-radius:4px;
+
+    font-size:14px;
+
     cursor:pointer;
-    transition:0.3s;
+
+    transition:0.2s;
 }
 
+
+/* BUTTON HOVER */
+
 .certificate-card button:hover{
-    background:#4d7ea4;
+    background:#102a43;
 }

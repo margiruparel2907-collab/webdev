@@ -1,130 +1,258 @@
-body {
-     background: #f8e3a0;
-    display: flex;
-    margin: 0;
-    height: 100vh;
-    font-family: Arial, sans-serif;
+/* PAGE */
+
+body{
+    margin:0;
+
+    height:100vh;
+
+    font-family:Arial, sans-serif;
+
+    background:#f3f5f7;
+
+    overflow:hidden;
 }
 
 
-/* Overlay */
+/* MAIN PHOTO SECTION */
+
+.bluepart{
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:55%;
+    height:100vh;
+
+    background:
+        linear-gradient(
+            rgba(16,42,67,0.40),
+            rgba(16,42,67,0.40)
+        ),
+        url("31618836056.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    clip-path:polygon(
+        0 0,
+        100% 0,
+        20% 100%,
+        0 100%
+    );
+
+    z-index:2;
+}
+
+
+/* DARK PHOTO OVERLAY */
+
 .bluepart::after{
     content:"";
+
     position:absolute;
+
     inset:0;
 
     background:linear-gradient(
         135deg,
-        rgba(0,0,0,.55),
-        rgba(0,0,0,.15),
-        rgba(47,102,144,.45)
+        rgba(0,0,0,0.50),
+        rgba(0,0,0,0.10),
+        rgba(47,102,144,0.35)
     );
 }
 
-.bluepart {
-   position: absolute;
-    top: 0;
-    left: 0;
 
-    width: 55%;
-    height: 100vh;
+/* BLUE SHAPE BEHIND PHOTO */
 
-    background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.35),
-            rgba(0, 0, 0, 0.35)
-        ),
-        url("31618836056.jpg");
+.bluepart2{
+    width:70%;
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    height:250vh;
 
-    clip-path: polygon(0 0, 100% 0, 20% 100%, 0 100%);
+    position:absolute;
 
-    z-index: 2;
+    left:0;
+
+    bottom:0;
+
+    background:linear-gradient(
+        130deg,
+        #9fc4d9,
+        #2f6690
+    );
+
+    clip-path:polygon(
+        0 100%,
+        0 40%,
+        70% 100%
+    );
+
+    z-index:1;
 }
 
-.bluepart2 {
-    width: 70%;
-    height: 250vh;
 
-    position: absolute;
-    left: 0;
-    bottom: 0;
+/* LOGIN BOX */
 
-    background: linear-gradient(130deg,#ADD8E6,#2F6690);
+.loginbox{
+    background:rgba(255,255,255,0.97);
 
-    clip-path: polygon(0 100%,0 40%,70% 100%);
+    width:420px;
 
-    z-index: 1;      /* Behind */
-}
+    padding:45px;
 
-label {
-    display: inline-block;
-    width: 110px;   /* Keeps both labels aligned */
-    font-size: 22px;
-    margin-bottom: 20px;
-}
+    border-radius:18px;
 
-.loginbox {
-    background: rgba(255,255,255,0.95);
-    width: 420px;
-    padding: 50px;
-
-    border-radius: 25px;
+    box-sizing:border-box;
 
     box-shadow:
-        0 20px 45px rgba(0,0,0,.18);
+        0 15px 40px rgba(16,42,67,0.16);
 
-    position: absolute;
-    right: 8%;
-    top: 50%;
-    transform: translateY(-50%);
+    position:absolute;
 
-    backdrop-filter: blur(8px);
+    right:8%;
+
+    top:48%;
+
+    transform:translateY(-50%);
+
+    z-index:5;
 }
-.subtitle{
-    position: absolute;
-    right: 10%;
-    top: 73%;
 
-    width: 430px;
 
-    text-align: center;
+/* LOGIN HEADING */
 
-    color: #555;
-    font-size: 15px;
-    line-height: 1.6;
-    font-family:'Times New Roman', Times, serif;
-    font-style: italic;
-    letter-spacing: 0.5px;
+.loginbox .login{
+    text-align:center;
+
+    font-family:"Times New Roman", Times, serif;
+
+    font-size:38px;
+
+    font-weight:bold;
+
+    color:#102a43;
+
+    margin-top:0;
+
+    margin-bottom:40px;
 }
-.loginbox .login {
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 45px;
+
+
+/* LABELS */
+
+label{
+    display:inline-block;
+
+    width:110px;
+
+    font-size:17px;
+
+    color:#172b4d;
+
+    margin-bottom:20px;
 }
+
+
+/* INPUT BOXES */
 
 .loginbox #username,
-.loginbox #password {
-    width: 220px;
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
+.loginbox #password{
+    width:220px;
+
+    padding:10px;
+
+    box-sizing:border-box;
+
+    border:1px solid #cbd5df;
+
+    border-radius:5px;
+
+    background:#f8fafb;
+
+    outline:none;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+
+    transition:0.2s;
 }
 
-.loginbox .button {
-    float: right;
-    width: 90px;
-    padding: 10px;
-    background: #4682B4;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+
+/* INPUT FOCUS */
+
+.loginbox #username:focus,
+.loginbox #password:focus{
+    border-color:#2f6690;
+
+    background:white;
+
+    box-shadow:0 0 0 2px rgba(47,102,144,0.10);
+}
+
+
+/* LOGIN BUTTON */
+
+.loginbox .button{
+    float:right;
+
+    width:95px;
+
+    padding:11px;
+
+    background:#2f6690;
+
+    color:white;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    transition:0.2s;
+}
+
+
+/* BUTTON HOVER */
+
+.loginbox .button:hover{
+    background:#102a43;
+
+    transform:translateY(-1px);
+}
+
+
+/* SUBTITLE */
+
+.subtitle{
+    position:absolute;
+
+    right:8%;
+
+    top:76%;
+
+    width:420px;
+
+    text-align:center;
+
+    color:#607080;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    font-family:"Times New Roman", Times, serif;
+
+    font-style:italic;
+
+    letter-spacing:0.4px;
+
+    z-index:5;
 }

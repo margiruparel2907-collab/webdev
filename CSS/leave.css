@@ -1,102 +1,223 @@
 body{
-	background:#f9ebbf;
+    margin:0;
+
+    background:#f3f5f7;
+
+    font-family:Arial, sans-serif;
+
+    color:#172b4d;
+
+    background-image:
+        linear-gradient(rgba(243,245,247,0.90),
+                        rgba(243,245,247,0.90)),
+        url("Screenshot 2026-08-18 160845.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
 }
+
+
+/* LEFT DECORATIVE LINES */
+
 .left-lines{
-    position: absolute;
-    top: 58px;
-    left: 8px;
-    z-index: 1;
-    display: flex;
-    gap: 10px;
+    position:absolute;
+
+    top:58px;
+    left:8px;
+
+    display:flex;
+
+    gap:8px;
+
+    z-index:1;
 }
 
 .line{
-    width: 12px;
-    height: 780px;
-    z-index: 2;
-  background-color: #6390b3;
+    width:8px;
+
+    height:780px;
+
+    background:#2f5d85;
 }
+
+
+/* HEADER */
+
 header{
-    height:50px;
-    background:#6390b3;
+    height:60px;
+
+    background:#102a43;
 
     display:flex;
+
     align-items:center;
 
     padding:0 20px;
+
+    box-sizing:border-box;
+
+    color:white;
 }
 
+
+/* BACK BUTTON */
+
 .menu-circle1{
-    width:35px;
-    height:35px;
+    width:40px;
+    height:40px;
 
     border-radius:50%;
 
     background:white;
 
+    border:none;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
-    
+    font-size:22px;
+
+    color:#102a43;
+
     cursor:pointer;
 }
+
+.menu-circle1:hover{
+    background:#e8eef3;
+}
+
+
+/* GREETING */
+
 .greeting{
     margin-left:18px;
+
     font-size:19px;
-    font-weight:normal;
+
+    font-weight:500;
 }
+
+
+/* PAGE TITLE */
+
 .title{
-    height:30px;
-    background:#6390b3;
-    z-index: 1;
-    padding-left:20px;
-    line-height:30px;
-    position:absolute;
-    font-size:20px;
-    top:60px;
-    width: 1475px;
+    height:50px;
+
+    background:white;
+
+    padding-left:90px;
+
+    line-height:50px;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:#102a43;
+
+    border-bottom:1px solid #dce3e8;
+
+    box-sizing:border-box;
 }
+
+
+/* LEAVE AREA */
+
 .leave-container{
-    margin-top:90px;
     margin-left:90px;
-    width:90%;
+
+    margin-top:35px;
+
+    width:82%;
 }
+
+
+/* ADD LEAVE BUTTON */
 
 .add-leave{
-    width:180px;
-    height:45px;
+    width:150px;
 
-    background:#6390b3;
+    height:42px;
+
+    background:#2f5d85;
+
     color:white;
 
     border:none;
-    border-radius:8px;
 
-    font-size:17px;
+    border-radius:4px;
+
+    font-size:15px;
+
     cursor:pointer;
 
-    margin-bottom:30px;
+    margin-bottom:22px;
+
+    transition:0.2s;
 }
 
 .add-leave:hover{
-    background:#4d7ea4;
+    background:#102a43;
+
+    transform:translateY(-1px);
 }
+
+
+/* LEAVE CARD */
 
 .leave-box{
     width:100%;
+
+    box-sizing:border-box;
+
     background:white;
 
-    border-left:8px solid #6390b3;
-    border-radius:10px;
+    border:1px solid #dce3e8;
 
-    padding:20px;
-    margin-bottom:25px;
+    border-left:5px solid #2f5d85;
 
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    padding:18px 22px;
+
+    margin-bottom:18px;
+
+    box-shadow:0 3px 10px rgba(16,42,67,0.07);
+
+    transition:0.2s;
 }
 
+
+/* CARD HOVER */
+
+.leave-box:hover{
+    box-shadow:0 5px 14px rgba(16,42,67,0.12);
+
+    transform:translateX(3px);
+}
+
+
+/* LEAVE TEXT */
+
 .leave-box p{
-    margin:8px 0;
-    font-size:17px;
+    margin:9px 0;
+
+    font-size:15px;
+
+    color:#536474;
+}
+
+
+/* LABEL */
+
+.leave-box b{
+    display:inline-block;
+
+    width:100px;
+
+    color:#102a43;
 }
