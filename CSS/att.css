@@ -218,3 +218,99 @@ td:last-child{
 th:last-child{
     text-align:center;
 }
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark{
+    background:#172b4d;
+    color:white;
+
+    background-image:
+        linear-gradient(rgba(23,43,77,0.92),
+                        rgba(23,43,77,0.92)),
+        url("Screenshot 2026-08-18 160845.png");
+}
+
+
+/* HEADER */
+
+body.dark header{
+    background:#102a43;
+}
+
+
+/* BACK BUTTON */
+
+body.dark .menu-circle1{
+    background:#243b53;
+    color:white;
+}
+
+body.dark .menu-circle1:hover{
+    background:#334e68;
+}
+
+
+/* PAGE TITLE */
+
+body.dark .title{
+    background:#243b53;
+    color:white;
+    border-bottom-color:#486581;
+}
+
+
+/* ATTENDANCE CONTAINER */
+
+body.dark .attendance{
+    background:rgba(36,59,83,0.95);
+    border-color:#486581;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.25);
+}
+
+
+/* TABLE */
+
+body.dark table{
+    background:#243b53;
+}
+
+
+/* TABLE HEADING */
+
+body.dark th{
+    background:#102a43;
+    border-color:#486581;
+    color:white;
+}
+
+
+/* TABLE DATA */
+
+body.dark td{
+    color:#d0d8e0;
+    border-bottom-color:#486581;
+}
+
+
+/* ALTERNATE ROW */
+
+body.dark tr:nth-child(even){
+    background:#334e68;
+}
+
+
+/* HOVER */
+
+body.dark tr:hover{
+    background:#486581;
+}
+
+
+/* ATTENDANCE PERCENTAGE */
+
+body.dark td:last-child{
+    color:#8fb8d8;
+}

@@ -218,3 +218,105 @@ tr:hover td{
 
     letter-spacing:1px;
 }
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark{
+    background:#172b4d;
+    color:white;
+
+    background-image:
+        linear-gradient(rgba(23,43,77,0.92),
+                        rgba(23,43,77,0.92)),
+        url("Screenshot 2026-08-18 160845.png");
+}
+
+
+/* HEADER */
+
+body.dark header{
+    background:#102a43;
+}
+
+
+/* BACK BUTTON */
+
+body.dark .menu-circle1{
+    background:#243b53;
+    color:white;
+}
+
+body.dark .menu-circle1:hover{
+    background:#334e68;
+}
+
+
+/* PAGE TITLE */
+
+body.dark .title{
+    background:#243b53;
+    color:white;
+    border-bottom-color:#486581;
+}
+
+
+/* TABLE CONTAINER */
+
+body.dark .table-container{
+    background:#243b53;
+
+    border-color:#486581;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.25);
+}
+
+
+/* TABLE */
+
+body.dark table{
+    background:#243b53;
+}
+
+
+/* TABLE HEADING */
+
+body.dark th{
+    background:#2f5d85;
+
+    border-color:#486581;
+}
+
+
+/* TABLE DATA */
+
+body.dark td{
+    background:#243b53;
+
+    border-color:#486581;
+
+    color:#e5edf4;
+}
+
+
+/* ALTERNATE ROW */
+
+body.dark tr:nth-child(even) td{
+    background:#2b4560;
+}
+
+
+/* HOVER */
+
+body.dark tr:hover td{
+    background:#334e68;
+}
+
+
+/* BREAK */
+
+body.dark .break{
+    background:#334e68;
+
+    color:#b8d4e8;
+}

@@ -2,57 +2,211 @@
 <html>
 
 <head>
-  <title>Student portal</title>
-<link rel="stylesheet" href="../CSS/leave.css">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="../CSS/leave.css">
 </head>
 
-  <body>
-	<div class="left-lines">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-</div>
+<body>
+
+    <!-- LEFT DECORATIVE LINES -->
+
+    <div class="left-lines">
+
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+
+    </div>
+
+
+    <!-- HEADER -->
+
     <header>
+
         <a href="menu.html">
-    <button class="menu-circle1">&larr;</button></a>
-    </button>
-    <h2 class="greeting">
-        Hey, 25DCE001 !
-    </h2>
-   </header>
-   <div class="title">
-    Leave-Information!                                                                         
-</div>
-  <div class="leave-container">
+            <button class="menu-circle1">&larr;</button>
+        </a>
 
-    <button class="add-leave">+ Add Leave</button>
+        <h2 class="greeting">
+            Hey, 25DCE001 !
+        </h2>
 
-    <div class="leave-box">
-        <p><b>Leave ID :</b> LV001</p>
-        <p><b>From :</b> 15 Aug 2026</p>
-        <p><b>To :</b> 17 Aug 2026</p>
-        <p><b>Reason :</b> Medical Leave</p>
-        <p><b>Status :</b> Approved</p>
+    </header>
+
+
+    <!-- PAGE TITLE -->
+
+    <div class="title">
+        Leave-Information!
     </div>
 
-    <div class="leave-box">
-        <p><b>Leave ID :</b> LV002</p>
-        <p><b>From :</b> 10 Sept 2026</p>
-        <p><b>To :</b> 12 Sept 2026</p>
-        <p><b>Reason :</b> Family Function</p>
-        <p><b>Status :</b> Pending</p>
+
+    <!-- LEAVE INFORMATION -->
+
+    <div class="leave-container">
+
+        <!-- ADD LEAVE BUTTON -->
+
+        <button class="add-leave" id="addLeave">
+            + Add Leave
+        </button>
+
+
+        <!-- LEAVE 1 -->
+
+        <div class="leave-box">
+
+            <p>
+                <b>Leave ID :</b> LV001
+            </p>
+
+            <p>
+                <b>From :</b> 15 Aug 2026
+            </p>
+
+            <p>
+                <b>To :</b> 17 Aug 2026
+            </p>
+
+            <p>
+                <b>Reason :</b> Medical Leave
+            </p>
+
+            <p>
+                <b>Status :</b> Approved
+            </p>
+
+        </div>
+
+
+        <!-- LEAVE 2 -->
+
+        <div class="leave-box">
+
+            <p>
+                <b>Leave ID :</b> LV002
+            </p>
+
+            <p>
+                <b>From :</b> 10 Sept 2026
+            </p>
+
+            <p>
+                <b>To :</b> 12 Sept 2026
+            </p>
+
+            <p>
+                <b>Reason :</b> Family Function
+            </p>
+
+            <p>
+                <b>Status :</b> Pending
+            </p>
+
+        </div>
+
+
+        <!-- LEAVE 3 -->
+
+        <div class="leave-box">
+
+            <p>
+                <b>Leave ID :</b> LV003
+            </p>
+
+            <p>
+                <b>From :</b> 20 Oct 2026
+            </p>
+
+            <p>
+                <b>To :</b> 21 Oct 2026
+            </p>
+
+            <p>
+                <b>Reason :</b> Personal Work
+            </p>
+
+            <p>
+                <b>Status :</b> Rejected
+            </p>
+
+        </div>
+
     </div>
 
-    <div class="leave-box">
-        <p><b>Leave ID :</b> LV003</p>
-        <p><b>From :</b> 20 Oct 2026</p>
-        <p><b>To :</b> 21 Oct 2026</p>
-        <p><b>Reason :</b> Personal Work</p>
-        <p><b>Status :</b> Rejected</p>
+
+    <!-- ADD LEAVE MODAL -->
+
+    <div class="leave-modal" id="leaveModal">
+
+        <div class="leave-modal-content">
+
+            <button class="close-leave" id="closeLeave">
+                &times;
+            </button>
+
+            <h2>
+                Add Leave
+            </h2>
+
+
+            <!-- FROM DATE -->
+
+            <label for="fromDate">
+                From Date
+            </label>
+
+            <input
+                type="date"
+                id="fromDate"
+            >
+
+
+            <!-- TO DATE -->
+
+            <label for="toDate">
+                To Date
+            </label>
+
+            <input
+                type="date"
+                id="toDate"
+            >
+
+
+            <!-- REASON -->
+
+            <label for="reason">
+                Reason
+            </label>
+
+            <textarea
+                id="reason"
+                rows="4"
+                placeholder="Enter reason for leave"
+            ></textarea>
+
+
+            <!-- SUBMIT -->
+
+            <button
+                class="submit-leave"
+                id="submitLeave"
+            >
+                Submit Leave
+            </button>
+
+        </div>
+
     </div>
 
-</div> 
-    	
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../Prac_4/theme.js"></script>
+
+    <script src="../Prac_4/leave.js"></script>
+
 </body>
 
 </html>

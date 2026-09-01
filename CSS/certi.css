@@ -230,3 +230,220 @@ header{
 .certificate-card button:hover{
     background:#102a43;
 }
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark{
+    background:#172b4d;
+    color:white;
+
+    background-image:
+        linear-gradient(rgba(23,43,77,0.92),
+                        rgba(23,43,77,0.92)),
+        url("Screenshot 2026-08-18 160845.png");
+}
+
+
+/* HEADER */
+
+body.dark header{
+    background:#102a43;
+}
+
+
+/* BACK BUTTON */
+
+body.dark .menu-circle1{
+    background:#243b53;
+    color:white;
+}
+
+body.dark .menu-circle1:hover{
+    background:#334e68;
+}
+
+
+/* PAGE TITLE */
+
+body.dark .title{
+    background:#243b53;
+    color:white;
+    border-bottom-color:#486581;
+}
+
+
+/* CERTIFICATE CARD */
+
+body.dark .certificate-card{
+    background:rgba(36,59,83,0.95);
+
+    border-color:#486581;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.25);
+}
+
+
+/* CARD HOVER */
+
+body.dark .certificate-card:hover{
+    border-color:#8fb8d8;
+
+    box-shadow:0 6px 16px rgba(0,0,0,0.35);
+}
+
+
+/* CERTIFICATE IMAGE */
+
+body.dark .certificate-card img{
+    border-bottom-color:#486581;
+}
+
+
+/* CERTIFICATE NAME */
+
+body.dark .certificate-card h3{
+    color:white;
+}
+
+
+/* VIEW BUTTON */
+
+body.dark .certificate-card button{
+    background:#2f5d85;
+    color:white;
+}
+
+body.dark .certificate-card button:hover{
+    background:#486581;
+}
+/* =========================
+   CERTIFICATE MODAL
+========================= */
+
+.certificate-modal{
+    display:none;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.65);
+
+    z-index:100;
+
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* MODAL BOX */
+
+.modal-content{
+    position:relative;
+
+    width:650px;
+
+    max-height:90vh;
+
+    background:white;
+
+    padding:25px;
+
+    box-sizing:border-box;
+
+    border-radius:8px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
+    text-align:center;
+
+    overflow:auto;
+}
+
+
+/* MODAL TITLE */
+
+.modal-content h2{
+    margin-top:0;
+
+    margin-bottom:20px;
+
+    color:#102a43;
+}
+
+
+/* CERTIFICATE IMAGE */
+
+.modal-content img{
+    width:100%;
+
+    max-height:70vh;
+
+    object-fit:contain;
+
+    display:block;
+}
+
+
+/* CLOSE BUTTON */
+
+.close-modal{
+    position:absolute;
+
+    top:8px;
+    right:12px;
+
+    width:35px;
+    height:35px;
+
+    border:none;
+
+    background:none;
+
+    font-size:28px;
+
+    color:#102a43;
+
+    cursor:pointer;
+}
+
+
+.close-modal:hover{
+    color:#2f5d85;
+}
+
+
+/* =========================
+   DARK MODE MODAL
+========================= */
+
+body.dark .certificate-modal{
+    background:rgba(0,0,0,0.75);
+}
+
+
+body.dark .modal-content{
+    background:#243b53;
+
+    border-color:#486581;
+}
+
+
+body.dark .modal-content h2{
+    color:white;
+}
+
+
+body.dark .close-modal{
+    color:white;
+}
+
+
+body.dark .close-modal:hover{
+    color:#9fc4d9;
+}

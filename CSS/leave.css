@@ -221,3 +221,309 @@ header{
 
     color:#102a43;
 }
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark{
+    background:#172b4d;
+    color:white;
+
+    background-image:
+        linear-gradient(rgba(23,43,77,0.92),
+                        rgba(23,43,77,0.92)),
+        url("Screenshot 2026-08-18 160845.png");
+}
+
+
+/* HEADER */
+
+body.dark header{
+    background:#102a43;
+}
+
+
+/* BACK BUTTON */
+
+body.dark .menu-circle1{
+    background:#243b53;
+    color:white;
+}
+
+body.dark .menu-circle1:hover{
+    background:#334e68;
+}
+
+
+/* PAGE TITLE */
+
+body.dark .title{
+    background:#243b53;
+    color:white;
+    border-bottom-color:#486581;
+}
+
+
+/* LEAVE CONTAINER */
+
+body.dark .leave-container{
+    color:white;
+}
+
+
+/* ADD LEAVE BUTTON */
+
+body.dark .add-leave{
+    background:#2f5d85;
+    color:white;
+}
+
+body.dark .add-leave:hover{
+    background:#486581;
+}
+
+
+/* LEAVE CARD */
+
+body.dark .leave-box{
+    background:#243b53;
+
+    border-color:#486581;
+    border-left-color:#6f9fc4;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.25);
+}
+
+
+/* CARD HOVER */
+
+body.dark .leave-box:hover{
+    background:#2b4560;
+
+    box-shadow:0 5px 14px rgba(0,0,0,0.35);
+}
+
+
+/* LEAVE TEXT */
+
+body.dark .leave-box p{
+    color:#d0d8e0;
+}
+
+
+/* LABEL */
+
+body.dark .leave-box b{
+    color:white;
+}
+/* =========================
+   ADD LEAVE MODAL
+========================= */
+
+.leave-modal{
+    display:none;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.60);
+
+    z-index:100;
+
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* MODAL BOX */
+
+.leave-modal-content{
+    position:relative;
+
+    width:450px;
+
+    background:white;
+
+    padding:30px;
+
+    box-sizing:border-box;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+
+/* MODAL TITLE */
+
+.leave-modal-content h2{
+    margin-top:0;
+
+    margin-bottom:25px;
+
+    color:#102a43;
+
+    font-size:22px;
+}
+
+
+/* LABELS */
+
+.leave-modal-content label{
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:6px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#102a43;
+}
+
+
+/* INPUTS */
+
+.leave-modal-content input,
+.leave-modal-content textarea{
+    width:100%;
+
+    padding:10px;
+
+    box-sizing:border-box;
+
+    border:1px solid #cbd5df;
+
+    background:#f8fafb;
+
+    font-family:Arial, sans-serif;
+
+    outline:none;
+}
+
+
+/* FOCUS */
+
+.leave-modal-content input:focus,
+.leave-modal-content textarea:focus{
+    border-color:#2f5d85;
+
+    background:white;
+}
+
+
+/* SUBMIT BUTTON */
+
+.submit-leave{
+    margin-top:25px;
+
+    padding:11px 25px;
+
+    background:#2f5d85;
+
+    color:white;
+
+    border:none;
+
+    border-radius:4px;
+
+    cursor:pointer;
+
+    font-size:14px;
+}
+
+.submit-leave:hover{
+    background:#102a43;
+}
+
+
+/* CLOSE BUTTON */
+
+.close-leave{
+    position:absolute;
+
+    top:8px;
+    right:12px;
+
+    width:35px;
+    height:35px;
+
+    border:none;
+
+    background:none;
+
+    color:#102a43;
+
+    font-size:28px;
+
+    cursor:pointer;
+}
+
+.close-leave:hover{
+    color:#2f5d85;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark .leave-modal{
+    background:rgba(0,0,0,0.75);
+}
+
+
+body.dark .leave-modal-content{
+    background:#243b53;
+
+    border-color:#486581;
+}
+
+
+body.dark .leave-modal-content h2{
+    color:white;
+}
+
+
+body.dark .leave-modal-content label{
+    color:white;
+}
+
+
+body.dark .leave-modal-content input,
+body.dark .leave-modal-content textarea{
+    background:#172b4d;
+
+    border-color:#486581;
+
+    color:white;
+}
+
+
+body.dark .leave-modal-content input:focus,
+body.dark .leave-modal-content textarea:focus{
+    background:#243b53;
+
+    border-color:#8fb8d8;
+}
+
+
+body.dark .leave-modal-content input::placeholder,
+body.dark .leave-modal-content textarea::placeholder{
+    color:#b8c7d6;
+}
+
+
+body.dark .close-leave{
+    color:white;
+}
+
+
+body.dark .close-leave:hover{
+    color:#9fc4d9;
+}

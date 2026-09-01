@@ -1,8 +1,9 @@
-/* PAGE */
+/* =========================
+   PAGE
+========================= */
 
 body{
     margin:0;
-
     height:100vh;
 
     font-family:Arial, sans-serif;
@@ -13,7 +14,9 @@ body{
 }
 
 
-/* MAIN PHOTO SECTION */
+/* =========================
+   MAIN PHOTO SECTION
+========================= */
 
 .bluepart{
     position:absolute;
@@ -32,9 +35,7 @@ body{
         url("31618836056.jpg");
 
     background-size:cover;
-
     background-position:center;
-
     background-repeat:no-repeat;
 
     clip-path:polygon(
@@ -66,17 +67,17 @@ body{
 }
 
 
-/* BLUE SHAPE BEHIND PHOTO */
+/* =========================
+   BLUE SHAPE BEHIND PHOTO
+========================= */
 
 .bluepart2{
     width:70%;
-
     height:250vh;
 
     position:absolute;
 
     left:0;
-
     bottom:0;
 
     background:linear-gradient(
@@ -95,7 +96,9 @@ body{
 }
 
 
-/* LOGIN BOX */
+/* =========================
+   LOGIN BOX
+========================= */
 
 .loginbox{
     background:rgba(255,255,255,0.97);
@@ -114,7 +117,6 @@ body{
     position:absolute;
 
     right:8%;
-
     top:48%;
 
     transform:translateY(-50%);
@@ -123,7 +125,9 @@ body{
 }
 
 
-/* LOGIN HEADING */
+/* =========================
+   LOGIN HEADING
+========================= */
 
 .loginbox .login{
     text-align:center;
@@ -137,31 +141,38 @@ body{
     color:#102a43;
 
     margin-top:0;
-
     margin-bottom:40px;
 }
 
 
-/* LABELS */
+/* =========================
+   LOGIN FIELD
+========================= */
 
-label{
-    display:inline-block;
+.login-field{
+    margin-bottom:20px;
+}
 
-    width:110px;
+
+/* LABEL */
+
+.login-field label{
+    display:block;
+
+    width:auto;
 
     font-size:17px;
 
     color:#172b4d;
 
-    margin-bottom:20px;
+    margin-bottom:8px;
 }
 
 
-/* INPUT BOXES */
+/* INPUT */
 
-.loginbox #username,
-.loginbox #password{
-    width:220px;
+.login-field input{
+    width:100%;
 
     padding:10px;
 
@@ -175,8 +186,6 @@ label{
 
     outline:none;
 
-    margin-bottom:20px;
-
     font-size:14px;
 
     transition:0.2s;
@@ -185,17 +194,44 @@ label{
 
 /* INPUT FOCUS */
 
-.loginbox #username:focus,
-.loginbox #password:focus{
+.login-field input:focus{
     border-color:#2f6690;
 
     background:white;
 
-    box-shadow:0 0 0 2px rgba(47,102,144,0.10);
+    box-shadow:
+        0 0 0 2px rgba(47,102,144,0.10);
 }
 
 
-/* LOGIN BUTTON */
+/* PLACEHOLDER */
+
+.login-field input::placeholder{
+    color:#8997a5;
+}
+
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+#usernameError,
+#passwordError{
+    display:block;
+
+    color:red;
+
+    font-size:13px;
+
+    margin-top:5px;
+
+    min-height:18px;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
 
 .loginbox .button{
     float:right;
@@ -203,6 +239,8 @@ label{
     width:95px;
 
     padding:11px;
+
+    margin-top:5px;
 
     background:#2f6690;
 
@@ -220,7 +258,7 @@ label{
 }
 
 
-/* BUTTON HOVER */
+/* LOGIN BUTTON HOVER */
 
 .loginbox .button:hover{
     background:#102a43;
@@ -229,13 +267,14 @@ label{
 }
 
 
-/* SUBTITLE */
+/* =========================
+   SUBTITLE
+========================= */
 
 .subtitle{
     position:absolute;
 
     right:8%;
-
     top:76%;
 
     width:420px;
@@ -255,4 +294,124 @@ label{
     letter-spacing:0.4px;
 
     z-index:5;
+}
+
+
+/* =========================
+   LOGIN MODAL
+========================= */
+
+.login-modal{
+    display:none;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.60);
+
+    z-index:20;
+
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* MODAL BOX */
+
+.login-modal-content{
+    position:relative;
+
+    width:380px;
+
+    background:white;
+
+    padding:30px;
+
+    box-sizing:border-box;
+
+    border-radius:8px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.25);
+
+    text-align:center;
+}
+
+
+/* MODAL TITLE */
+
+.login-modal-content h2{
+    margin-top:0;
+
+    color:#102a43;
+
+    font-size:24px;
+}
+
+
+/* MODAL MESSAGE */
+
+.login-modal-content p{
+    color:#607080;
+
+    font-size:15px;
+
+    margin:15px 0 25px;
+}
+
+
+/* CLOSE BUTTON */
+
+.close-login{
+    position:absolute;
+
+    top:8px;
+    right:12px;
+
+    width:35px;
+    height:35px;
+
+    border:none;
+
+    background:none;
+
+    font-size:28px;
+
+    color:#102a43;
+
+    cursor:pointer;
+}
+
+
+.close-login:hover{
+    color:#2f6690;
+}
+
+
+/* OK BUTTON */
+
+.ok-login{
+    padding:10px 25px;
+
+    background:#2f6690;
+
+    color:white;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-size:14px;
+}
+
+
+.ok-login:hover{
+    background:#102a43;
 }

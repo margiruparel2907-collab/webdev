@@ -2,69 +2,194 @@
 <html>
 
 <head>
-  <title>Student portal</title>
-<link rel="stylesheet" href="../CSS/edit.css">
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="../CSS/edit.css">
 </head>
 
-  <body>
-	<div class="left-lines">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-</div>
-    <header>
-        <a href="menu.html">
-    <button class="menu-circle1">&larr;</button></a>
-    </button>
-    <h2 class="greeting">
-        Hey, 25DCE001 !
-    </h2>
-   </header>
-   <div class="title">
-    Edit-Profile!                                                                           
-</div>
-   <div class="profile-container">
+<body>
 
-    <div class="photo-section">
-        <img src="profile.png" alt="Profile Photo" class="profile-pic">
+    <!-- LEFT DECORATIVE LINES -->
 
-        <button class="photo-btn">
-            Change Photo
-        </button>
+    <div class="left-lines">
+
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+
     </div>
 
-    <div class="form-section">
 
-        <label>Student ID</label>
-        <input type="text" value="25DCE001" readonly>
+    <!-- HEADER -->
 
-        <label>Name</label>
-        <input type="text" placeholder="Enter your name">
+    <header>
 
-        <label>Email</label>
-        <input type="email" placeholder="Enter your email">
+        <a href="menu.html">
+            <button class="menu-circle1">&larr;</button>
+        </a>
 
-        <label>Mobile Number</label>
-        <input type="text" placeholder="Enter mobile number">
+        <h2 class="greeting">
+            Hey, 25DCE001 !
+        </h2>
 
-        <label>Department</label>
-        <input type="text" value="Computer Engineering">
+    </header>
 
-        <label>Semester</label>
-        <input type="text" value="3">
 
-        <label>Address</label>
-        <textarea rows="4" placeholder="Enter Address"></textarea>
+    <!-- PAGE TITLE -->
 
-        <div class="buttons">
-            <button class="save-btn">Save Changes</button>
-            <button class="cancel-btn">Cancel</button>
+    <div class="title">
+        Edit-Profile!
+    </div>
+
+
+    <!-- PROFILE SECTION -->
+
+    <div class="profile-container">
+
+
+        <!-- PHOTO -->
+
+        <div class="photo-section">
+
+            <img src="profile.png"
+                 alt="Profile Photo"
+                 class="profile-pic">
+
+            <button class="photo-btn" id="changePhoto">
+                Change Photo
+            </button>
+
+        </div>
+
+
+        <!-- FORM -->
+
+        <div class="form-section">
+
+
+            <!-- STUDENT ID -->
+
+            <label for="studentId">
+                Student ID
+            </label>
+
+            <input
+                type="text"
+                id="studentId"
+                value="25DCE001"
+                readonly
+            >
+
+
+            <!-- NAME -->
+
+            <label for="name">
+                Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+
+            <!-- EMAIL -->
+
+            <label for="email">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+
+            <!-- MOBILE -->
+
+            <label for="mobile">
+                Mobile Number
+            </label>
+
+            <input
+                type="text"
+                id="mobile"
+                placeholder="Enter mobile number"
+            >
+
+
+            <!-- DEPARTMENT -->
+
+            <label for="department">
+                Department
+            </label>
+
+            <input
+                type="text"
+                id="department"
+                value="Computer Engineering"
+            >
+
+
+            <!-- SEMESTER -->
+
+            <label for="semester">
+                Semester
+            </label>
+
+            <input
+                type="text"
+                id="semester"
+                value="3"
+            >
+
+
+            <!-- ADDRESS -->
+
+            <label for="address">
+                Address
+            </label>
+
+            <textarea
+                id="address"
+                rows="4"
+                placeholder="Enter Address"
+            ></textarea>
+
+
+            <!-- BUTTONS -->
+
+            <div class="buttons">
+
+                <button
+                    class="save-btn"
+                    id="saveChanges"
+                >
+                    Save Changes
+                </button>
+
+                <button
+                    class="cancel-btn"
+                    id="cancelChanges"
+                >
+                    Cancel
+                </button>
+
+            </div>
+
         </div>
 
     </div>
 
-</div>
-    	
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../Prac_4/theme.js"></script>
+
+    <script src="../Prac_4/edit.js"></script>
+
 </body>
 
 </html>

@@ -2,26 +2,126 @@
 <html>
 
 <head>
-  <title>Student portal</title>
-<link rel="stylesheet" href="../CSS/stylee.css">
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="../CSS/stylee.css">
 </head>
 
 <body>
+
+    <!-- SUBTITLE -->
+
     <p class="subtitle">
-   Charusat hai to success hai.
-</p>
+        Charusat hai to success hai.
+    </p>
+
+
+    <!-- LOGIN BOX -->
+
     <div class="loginbox">
-        <h1 class="login">Welcome Back!</h1>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br>
-        <a href="dashboard.html"><button class="button">Login</button><br></a>
-          </div>
-          <div class="bluepart">
-	
-</div>
-<div class="bluepart2"></div>
+
+        <h1 class="login">
+            Welcome Back!
+        </h1>
+
+
+        <!-- USERNAME -->
+
+        <div class="login-field">
+
+            <label for="username">
+                Username:
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter username: student"
+            >
+
+            <span id="usernameError"></span>
+
+        </div>
+
+
+        <!-- PASSWORD -->
+
+        <div class="login-field">
+
+            <label for="password">
+                Password:
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter password: 12345"
+            >
+
+            <span id="passwordError"></span>
+
+        </div>
+
+
+        <!-- LOGIN BUTTON -->
+
+        <button
+            class="button"
+            id="loginButton"
+        >
+            Login
+        </button>
+
+    </div>
+
+
+    <!-- LOGIN MODAL -->
+
+    <div
+        class="login-modal"
+        id="loginModal"
+    >
+
+        <div class="login-modal-content">
+
+            <button
+                class="close-login"
+                id="closeLogin"
+            >
+                &times;
+            </button>
+
+            <h2 id="loginTitle">
+                Login
+            </h2>
+
+            <p id="loginMessage">
+            </p>
+
+            <button
+                class="ok-login"
+                id="okLogin"
+            >
+                OK
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- BACKGROUND -->
+
+    <div class="bluepart"></div>
+
+    <div class="bluepart2"></div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../Prac_4/login.js"></script>
 
 </body>
 

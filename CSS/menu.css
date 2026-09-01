@@ -175,3 +175,76 @@ header{
 
     padding-left:30px;
 }
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark{
+    background:#172b4d;
+    color:white;
+
+    background-image:
+        linear-gradient(rgba(23,43,77,0.92),
+                        rgba(23,43,77,0.92)),
+        url("Screenshot 2026-08-18 160845.png");
+}
+
+
+/* HEADER */
+
+body.dark header{
+    background:#102a43;
+}
+
+
+/* BACK BUTTON */
+
+body.dark .menu-circle1{
+    background:#243b53;
+    color:white;
+}
+
+body.dark .menu-circle1:hover{
+    background:#334e68;
+}
+
+
+/* HAMBURGER BUTTON */
+
+body.dark .menu-circle{
+    background:#243b53;
+    color:white;
+}
+
+body.dark .menu-circle:hover{
+    background:#334e68;
+}
+
+
+/* MENU BOX */
+
+body.dark .menu{
+    background:rgba(36,59,83,0.95);
+
+    border-right-color:#486581;
+
+    box-shadow:3px 0 12px rgba(0,0,0,0.25);
+}
+
+
+/* MENU LINKS */
+
+body.dark .menu .text{
+    color:white;
+}
+
+
+/* MENU LINK HOVER */
+
+body.dark .menu .text:hover{
+    background:#334e68;
+    color:#b8d4e8;
+}
+.menu-hidden{
+    display:none;
+}

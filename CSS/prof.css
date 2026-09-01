@@ -212,3 +212,75 @@ header{
 .value{
     color:#172b4d;
 }
+/* DARK MODE */
+
+body.dark{
+    background:#172b4d;
+
+    color:white;
+}
+
+
+/* HEADER */
+
+body.dark header{
+    background:#102a43;
+}
+
+
+/* PAGE TITLE */
+
+body.dark .title{
+    background:#243b53;
+    border-color:#486581;
+    color:white;
+}
+
+
+/* PROFILE PHOTO */
+
+body.dark .profile-photo{
+    background:#243b53;
+    border-color:#486581;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.25);
+}
+
+
+/* PROFILE INFORMATION */
+
+body.dark .profile-info{
+    background:#243b53;
+    border-color:#486581;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.25);
+}
+
+
+/* ROW */
+
+body.dark .row{
+    border-color:#486581;
+}
+
+
+/* LABEL */
+
+body.dark .label{
+    color:#8fb8d8;
+}
+
+
+/* VALUE */
+
+body.dark .value{
+    color:#ffffff;
+}
+
+
+/* BACK BUTTON */
+
+body.dark .menu-circle1{
+    background:#ffffff;
+    color:#102a43;
+}
