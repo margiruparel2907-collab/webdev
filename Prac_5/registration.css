@@ -1,0 +1,241 @@
+body{
+    margin:0;
+
+    min-height:100vh;
+
+    background:#f3f5f7;
+
+    font-family:Arial, sans-serif;
+
+    color:#172b4d;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+}
+
+
+/* REGISTRATION CONTAINER */
+
+.registration-container{
+    width:600px;
+
+    background:white;
+
+    padding:35px;
+
+    box-sizing:border-box;
+
+    border:1px solid #dce3e8;
+
+    box-shadow:0 5px 20px rgba(16,42,67,0.10);
+}
+
+
+/* HEADING */
+
+.registration-container h1{
+    margin:0;
+
+    text-align:center;
+
+    color:#102a43;
+
+    font-size:28px;
+}
+
+.subtitle{
+    text-align:center;
+
+    color:#607080;
+
+    font-size:14px;
+
+    margin-bottom:30px;
+}
+
+
+/* LABEL */
+
+form > label{
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:6px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#102a43;
+}
+
+
+/* INPUTS */
+
+form > input,
+form > select{
+    width:100%;
+
+    padding:11px;
+
+    box-sizing:border-box;
+
+    border:1px solid #cbd5df;
+
+    background:#f8fafb;
+
+    border-radius:4px;
+
+    font-size:14px;
+
+    outline:none;
+}
+
+
+/* FOCUS */
+
+form > input:focus,
+form > select:focus{
+    border-color:#2f5d85;
+
+    background:white;
+}
+
+
+/* ERROR */
+
+#nameError,
+#emailError,
+#mobileError,
+#passwordError,
+#confirmPasswordError,
+#courseError,
+#yearError,
+#genderError,
+#termsError{
+    display:block;
+
+    min-height:17px;
+
+    color:red;
+
+    font-size:12px;
+
+    margin-top:4px;
+}
+
+
+/* GENDER */
+
+.gender-group{
+    display:flex;
+
+    gap:25px;
+
+    margin-top:8px;
+}
+
+.gender-group label{
+    font-size:14px;
+
+    color:#526579;
+}
+
+.gender-group input{
+    margin-right:5px;
+}
+
+
+/* TERMS */
+
+.terms{
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:20px;
+}
+
+.terms input{
+    width:auto;
+}
+
+.terms label{
+    font-size:13px;
+
+    color:#526579;
+}
+
+
+/* REGISTER BUTTON */
+
+#registerButton{
+    width:100%;
+
+    margin-top:20px;
+
+    padding:12px;
+
+    background:#2f5d85;
+
+    color:white;
+
+    border:none;
+
+    border-radius:4px;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:0.2s;
+}
+
+#registerButton:hover{
+    background:#102a43;
+}
+
+
+/* SUCCESS */
+
+#successMessage{
+    text-align:center;
+
+    color:green;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-top:15px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+    body{
+        padding:15px;
+    }
+
+    .registration-container{
+        width:100%;
+
+        padding:25px;
+    }
+
+    .gender-group{
+        flex-direction:column;
+
+        gap:8px;
+    }
+}

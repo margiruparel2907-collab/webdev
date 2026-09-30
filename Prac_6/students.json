@@ -1,0 +1,107 @@
+[
+    {
+        "id": "25DCE001",
+        "name": "Margi Ruparel",
+        "course": "Computer Engineering",
+        "year": 3,
+        "division": "A"
+    },
+    {
+        "id": "25DCE002",
+        "name": "Aarav Shah",
+        "course": "Computer Engineering",
+        "year": 3,
+        "division": "A"
+    },
+    {
+        "id": "25DCE003",
+        "name": "Riya Patel",
+        "course": "Information Technology",
+        "year": 3,
+        "division": "B"
+    },
+    {
+        "id": "25DCE004",
+        "name": "Dev Mehta",
+        "course": "Mechanical Engineering",
+        "year": 3,
+        "division": "A"
+    },
+    {
+        "id": "25DCE005",
+        "name": "Anaya Desai",
+        "course": "Electrical Engineering",
+        "year": 2,
+        "division": "B"
+    },
+    {
+        "id": "25DCE006",
+        "name": "Yash Joshi",
+        "course": "Computer Engineering",
+        "year": 2,
+        "division": "A"
+    },
+    {
+        "id": "25DCE007",
+        "name": "Diya Trivedi",
+        "course": "Information Technology",
+        "year": 3,
+        "division": "A"
+    },
+    {
+        "id": "25DCE008",
+        "name": "Krish Patel",
+        "course": "Computer Engineering",
+        "year": 4,
+        "division": "B"
+    },
+    {
+        "id": "25DCE009",
+        "name": "Mahi Shah",
+        "course": "Mechanical Engineering",
+        "year": 2,
+        "division": "A"
+    },
+    {
+        "id": "25DCE010",
+        "name": "Vivaan Desai",
+        "course": "Electrical Engineering",
+        "year": 3,
+        "division": "B"
+    },
+    {
+        "id": "25DCE011",
+        "name": "Ishita Patel",
+        "course": "Computer Engineering",
+        "year": 4,
+        "division": "A"
+    },
+    {
+        "id": "25DCE012",
+        "name": "Dhruv Mehta",
+        "course": "Information Technology",
+        "year": 2,
+        "division": "B"
+    },
+    {
+        "id": "25DCE013",
+        "name": "Myra Shah",
+        "course": "Electrical Engineering",
+        "year": 2,
+        "division": "A"
+    },
+    {
+        "id": "25DCE014",
+        "name": "Aditya Joshi",
+        "course": "Computer Engineering",
+        "year": 3,
+        "division": "B"
+    },
+    {
+        "id": "25DCE015",
+        "name": "Kiara Patel",
+        "course": "Mechanical Engineering",
+        "year": 4,
+        "division": "A"
+    }
+]

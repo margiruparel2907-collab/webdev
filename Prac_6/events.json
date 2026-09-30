@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "title": "Tech Fest",
+        "category": "Technical",
+        "date": "2026-10-05",
+        "location": "CHARUSAT Campus"
+    },
+    {
+        "id": 2,
+        "title": "Coding Workshop",
+        "category": "Workshop",
+        "date": "2026-10-08",
+        "location": "Computer Lab"
+    },
+    {
+        "id": 3,
+        "title": "Annual Sports Meet",
+        "category": "Sports",
+        "date": "2026-10-12",
+        "location": "University Ground"
+    },
+    {
+        "id": 4,
+        "title": "AI and ML Seminar",
+        "category": "Seminar",
+        "date": "2026-10-15",
+        "location": "Seminar Hall"
+    },
+    {
+        "id": 5,
+        "title": "Hackathon 2026",
+        "category": "Hackathon",
+        "date": "2026-10-20",
+        "location": "Innovation Lab"
+    },
+    {
+        "id": 6,
+        "title": "Web Development Workshop",
+        "category": "Workshop",
+        "date": "2026-10-24",
+        "location": "Computer Lab"
+    },
+    {
+        "id": 7,
+        "title": "Cultural Night",
+        "category": "Cultural",
+        "date": "2026-10-28",
+        "location": "Open Air Theatre"
+    },
+    {
+        "id": 8,
+        "title": "Cyber Security Seminar",
+        "category": "Seminar",
+        "date": "2026-11-02",
+        "location": "Seminar Hall"
+    },
+    {
+        "id": 9,
+        "title": "Robotics Competition",
+        "category": "Technical",
+        "date": "2026-11-06",
+        "location": "Robotics Lab"
+    },
+    {
+        "id": 10,
+        "title": "Photography Contest",
+        "category": "Cultural",
+        "date": "2026-11-10",
+        "location": "Main Auditorium"
+    },
+    {
+        "id": 11,
+        "title": "Cloud Computing Workshop",
+        "category": "Workshop",
+        "date": "2026-11-14",
+        "location": "Computer Lab"
+    },
+    {
+        "id": 12,
+        "title": "Inter College Cricket",
+        "category": "Sports",
+        "date": "2026-11-18",
+        "location": "University Ground"
+    },
+    {
+        "id": 13,
+        "title": "Startup and Innovation Talk",
+        "category": "Seminar",
+        "date": "2026-11-22",
+        "location": "Seminar Hall"
+    },
+    {
+        "id": 14,
+        "title": "Code Relay Challenge",
+        "category": "Hackathon",
+        "date": "2026-11-26",
+        "location": "Innovation Lab"
+    },
+    {
+        "id": 15,
+        "title": "Annual Day Celebration",
+        "category": "Cultural",
+        "date": "2026-11-30",
+        "location": "Main Auditorium"
+    }
+]

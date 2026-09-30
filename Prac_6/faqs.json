@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "question": "How can I check my attendance?",
+        "answer": "Open the Attendance section from the Student Hub dashboard.",
+        "category": "Attendance"
+    },
+    {
+        "id": 2,
+        "question": "Where can I find my timetable?",
+        "answer": "Open the Time-Table section to view your daily schedule.",
+        "category": "Timetable"
+    },
+    {
+        "id": 3,
+        "question": "How can I edit my profile?",
+        "answer": "Open Edit Profile from the menu and update your information.",
+        "category": "Profile"
+    },
+    {
+        "id": 4,
+        "question": "Where can I see my certificates?",
+        "answer": "Open the Certificates section to view your uploaded certificates.",
+        "category": "Certificates"
+    },
+    {
+        "id": 5,
+        "question": "How can I apply for leave?",
+        "answer": "Open Leave Information and click the Add Leave button.",
+        "category": "Leave"
+    },
+    {
+        "id": 6,
+        "question": "Where can I find fee information?",
+        "answer": "Open Fees Information from the Student Hub menu.",
+        "category": "Fees"
+    },
+    {
+        "id": 7,
+        "question": "How can I view subject information?",
+        "answer": "Open Subject Information from the menu.",
+        "category": "Subjects"
+    },
+    {
+        "id": 8,
+        "question": "Can I change my profile photo?",
+        "answer": "Yes, use the Change Photo option in Edit Profile.",
+        "category": "Profile"
+    },
+    {
+        "id": 9,
+        "question": "How can I check pending fees?",
+        "answer": "Open Fees Information and check the Pending Fees section.",
+        "category": "Fees"
+    },
+    {
+        "id": 10,
+        "question": "Where can I find university information?",
+        "answer": "Open the About Us section from the Student Hub dashboard.",
+        "category": "General"
+    },
+    {
+        "id": 11,
+        "question": "How can I check my student ID?",
+        "answer": "Your student ID is available in the Profile section.",
+        "category": "Profile"
+    },
+    {
+        "id": 12,
+        "question": "Can I search the FAQ list?",
+        "answer": "Yes, use the search box to find questions or answers quickly.",
+        "category": "General"
+    },
+    {
+        "id": 13,
+        "question": "How do I change the website theme?",
+        "answer": "Use the theme button on the Dashboard to switch between light and dark mode.",
+        "category": "General"
+    },
+    {
+        "id": 14,
+        "question": "Where can I check leave status?",
+        "answer": "Open Leave Information to view approved, pending, and rejected leaves.",
+        "category": "Leave"
+    },
+    {
+        "id": 15,
+        "question": "Where can I see upcoming college events?",
+        "answer": "Open the Events page to view upcoming college events.",
+        "category": "Events"
+    }
+]

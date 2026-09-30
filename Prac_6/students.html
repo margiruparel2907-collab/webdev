@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Hub - Students</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="prac6.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a href="../HTML/menu.html">
+            <button class="back-button">
+                &larr;
+            </button>
+        </a>
+
+        <h2>
+            Students
+        </h2>
+
+    </header>
+
+
+    <main class="page-container">
+
+        <h1>Student Profiles</h1>
+
+        <p class="page-description">
+            Student information loaded from JSON
+        </p>
+
+
+        <div class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by name or student ID..."
+            >
+
+
+            <select id="courseFilter">
+
+                <option value="all">
+                    All Courses
+                </option>
+
+                <option value="Computer Engineering">
+                    Computer Engineering
+                </option>
+
+                <option value="Information Technology">
+                    Information Technology
+                </option>
+
+                <option value="Mechanical Engineering">
+                    Mechanical Engineering
+                </option>
+
+                <option value="Electrical Engineering">
+                    Electrical Engineering
+                </option>
+
+            </select>
+
+
+            <select id="sortSelect">
+
+                <option value="nameAsc">
+                    Name: A-Z
+                </option>
+
+                <option value="nameDesc">
+                    Name: Z-A
+                </option>
+
+                <option value="idAsc">
+                    ID: Low-High
+                </option>
+
+                <option value="yearAsc">
+                    Year: Low-High
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <p id="loading">
+            Loading students...
+        </p>
+
+        <p id="error"></p>
+
+
+        <div id="studentList" class="data-grid"></div>
+
+
+        <div class="pagination">
+
+            <button id="previousButton">
+                Previous
+            </button>
+
+            <span id="pageInfo">
+                Page 1
+            </span>
+
+            <button id="nextButton">
+                Next
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="../Prac_4/theme.js"></script>
+    <script src="students.js"></script>
+
+</body>
+
+</html>

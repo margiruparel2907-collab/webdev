@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Hub - FAQs</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="prac6.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a href="../HTML/menu.html">
+            <button class="back-button">
+                &larr;
+            </button>
+        </a>
+
+        <h2>
+            FAQs
+        </h2>
+
+    </header>
+
+
+    <main class="page-container">
+
+        <h1>Frequently Asked Questions</h1>
+
+        <p class="page-description">
+            Frequently asked questions from Student Hub
+        </p>
+
+
+        <div class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search FAQs..."
+            >
+
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="Attendance">
+                    Attendance
+                </option>
+
+                <option value="Timetable">
+                    Timetable
+                </option>
+
+                <option value="Profile">
+                    Profile
+                </option>
+
+                <option value="Certificates">
+                    Certificates
+                </option>
+
+                <option value="Leave">
+                    Leave
+                </option>
+
+                <option value="Fees">
+                    Fees
+                </option>
+
+                <option value="Subjects">
+                    Subjects
+                </option>
+
+                <option value="General">
+                    General
+                </option>
+
+                <option value="Events">
+                    Events
+                </option>
+
+            </select>
+
+
+            <select id="sortSelect">
+
+                <option value="questionAsc">
+                    Question: A-Z
+                </option>
+
+                <option value="questionDesc">
+                    Question: Z-A
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <p id="loading">
+            Loading FAQs...
+        </p>
+
+        <p id="error"></p>
+
+
+        <div id="faqList"></div>
+
+
+        <div class="pagination">
+
+            <button id="previousButton">
+                Previous
+            </button>
+
+            <span id="pageInfo">
+                Page 1
+            </span>
+
+            <button id="nextButton">
+                Next
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="../Prac_4/theme.js"></script>
+    <script src="faqs.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Hub - Events</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="prac6.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a href="../HTML/menu.html">
+            <button class="back-button">
+                &larr;
+            </button>
+        </a>
+
+        <h2>
+            Events
+        </h2>
+
+    </header>
+
+
+    <main class="page-container">
+
+        <h1>College Events</h1>
+
+        <p class="page-description">
+            Upcoming events and activities
+        </p>
+
+
+        <!-- CONTROLS -->
+
+        <div class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search events..."
+            >
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="Technical">
+                    Technical
+                </option>
+
+                <option value="Workshop">
+                    Workshop
+                </option>
+
+                <option value="Sports">
+                    Sports
+                </option>
+
+                <option value="Seminar">
+                    Seminar
+                </option>
+
+                <option value="Hackathon">
+                    Hackathon
+                </option>
+
+                <option value="Cultural">
+                    Cultural
+                </option>
+
+            </select>
+
+
+            <select id="sortSelect">
+
+                <option value="dateAsc">
+                    Date: Earliest
+                </option>
+
+                <option value="dateDesc">
+                    Date: Latest
+                </option>
+
+                <option value="nameAsc">
+                    Name: A-Z
+                </option>
+
+                <option value="nameDesc">
+                    Name: Z-A
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <p id="loading">
+            Loading events...
+        </p>
+
+        <p id="error"></p>
+
+
+        <div id="eventList" class="data-grid"></div>
+
+
+        <div class="pagination">
+
+            <button id="previousButton">
+                Previous
+            </button>
+
+            <span id="pageInfo">
+                Page 1
+            </span>
+
+            <button id="nextButton">
+                Next
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="../Prac_4/theme.js"></script>
+    <script src="events.js"></script>
+
+</body>
+
+</html>
